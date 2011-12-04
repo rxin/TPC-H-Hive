@@ -1,0 +1,12 @@
+
+Reynold Xin
+rxin@cs.berkeley.edu
+
+Tools and scripts for running TPC-H benchmark on Apache Hive.
+
+Mainly consists of two packages:
+
+1. TPC-H DBGEN (http://www.tpc.org/tpch/)
+
+2. TPC-H for Hive by Yuntao Jia (https://issues.apache.org/jira/browse/hive-600)
+
