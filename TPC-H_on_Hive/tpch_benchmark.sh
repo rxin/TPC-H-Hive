@@ -6,12 +6,14 @@ source benchmark.conf;
 if [ -e "$LOG_FILE" ]; then
 	timestamp=`date "+%F-%R" --reference=$LOG_FILE`
 	backupFile="$LOG_FILE.$timestamp"
-	mv $LOG_FILE $LOG_DIR/$backupFile
+	mkdir -p $LOG_DIR
+	mv $LOG_FILE $backupFile
+	mv $backupFile $LOG_DIR
 fi
 
 echo ""
 echo "***********************************************"
-echo "*           PC-H benchmark on Hive            *"
+echo "*          TPC-H benchmark on Hive            *"
 echo "***********************************************"
 echo "                                               " 
 echo "Running Hive from $HIVE_HOME" | tee -a $LOG_FILE
