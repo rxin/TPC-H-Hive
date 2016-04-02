@@ -7,8 +7,7 @@ if [ -e "$LOG_FILE" ]; then
 	timestamp=`date "+%F-%R" --reference=$LOG_FILE`
 	backupFile="$LOG_FILE.$timestamp"
 	mkdir -p $LOG_DIR
-	mv $LOG_FILE $backupFile
-	mv $backupFile $LOG_DIR
+	mv $LOG_FILE $LOG_DIR/$backupFile
 fi
 
 echo ""
