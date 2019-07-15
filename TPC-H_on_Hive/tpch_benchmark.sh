@@ -11,7 +11,7 @@ fi
 
 echo ""
 echo "***********************************************"
-echo "*           PC-H benchmark on Hive            *"
+echo "*           TPC-H benchmark on Hive            *"
 echo "***********************************************"
 echo "                                               " 
 echo "Running Hive from $HIVE_HOME" | tee -a $LOG_FILE
